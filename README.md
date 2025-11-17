@@ -1,0 +1,2 @@
+# grant-schmid
+personal bio
