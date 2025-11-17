@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grant Schmid Jr.</title>
+  <meta name="description" content="Personal bio of Grant Schmid Jr — All-State & All-American high school track athlete, entrepreneur, and competitive distance runner from Efland, NC." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #0f1720;
+      --muted: #9aa6b2;
+      --accent-1: #7c3aed;
+      --accent-2: #06b6d4;
+      --glass: rgba(255,255,255,0.04);
+      --radius: 14px;
+      --max-w: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, rgba(6,6,8,1) 0%, rgba(12,14,18,1) 100%);
+      color: #e6eef6;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .wrap {
+      width: 100%;
+      max-width: var(--max-w);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.7);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 24px;
+      color: white;
+    }
+    .brand h1 { margin: 0; font-size: 20px; }
+    .brand p { margin: 4px 0 0 0; color: var(--muted); font-size: 13px; }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 14px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    nav a:hover { color: var(--accent-2); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 22px;
+    }
+
+    .panel {
+      background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
+      padding: 22px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.02);
+    }
+
+    .hero {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    .hero .info h2 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 900;
+    }
+    .hero .info p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      max-width: 65ch;
+    }
+    .btn {
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.06);
+      color: var(--muted);
+    }
+
+    section { margin-top: 24px; }
+    h3 { margin: 0 0 12px 0; font-size: 16px; }
+    p.lead { color: var(--muted); margin-bottom: 8px; }
+
+    .stats {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .stat {
+      flex: 1;
+      background: var(--glass);
+      padding: 12px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .stat strong { display: block; font-size: 18px; }
+
+    .skill { margin-bottom: 10px; }
+    .skill .label { display: flex; justify-content: space-between; color: var(--muted); font-size: 13px; }
+    .bar {
+      height: 10px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    .bar > i {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+      border-radius: 8px;
+    }
+
+    aside .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.02);
+      margin-bottom: 14px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar">GS</div>
+        <div>
+          <h1>Grant Schmid Jr.</h1>
+          <p>All-State & All-American Runner · Entrepreneur</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#entrepreneurship">Entrepreneurship</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <main>
+        <div class="panel">
+
+          <!-- HERO -->
+          <div class="hero">
+            <div class="info">
+              <h2>Hey — I'm <span style="background:linear-gradient(90deg,var(--accent-1),var(--accent-2)); -webkit-background-clip:text; color:transparent;">Grant</span>.</h2>
+              <p>
+                I’m a competitive distance runner for Orange High School (Efland, NC), with All-State and All-American honors.  
+                I train around 50 miles a week and push myself in business, running, and life.
+              </p>
+              <div style="margin-top:14px; display:flex; gap:10px;">
+                <a class="btn" href="#contact">Contact Me</a>
+                <a class="btn secondary" href="#about">Read My Story</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ABOUT -->
+          <section id="about">
+            <h3>About</h3>
+            <p>
+              From Efland, North Carolina, I’ve been running since 5th grade and now compete for Orange High School.  
+              I’ve raced in all the biggest invitational meets across our state as well as championship meets.  
+            </p>
+            <p>
+              Outside of track, I’m deeply invested in entrepreneurship — building businesses that reflect my drive, discipline, and vision.  
+              My athletic focus and business mindset go hand in hand: consistency, grit, and growth.
+            </p>
+
+            <div class="stats">
+              <!-- Using your “new” PR + Milesplit PRs -->
+              <div class="stat"><strong>9:36</strong><div>3200m PR (new)</div></div>
+              <div class="stat"><strong>4:23</strong><div>1600m PR (you told me)</div></div>
+              <div class="stat"><strong>15:58</strong><div>5k / CC PR</div></div>
+            </div>
+
+            <p style="margin-top: 12px; color: var(--muted); font-size: 13px;">
+              *Milesplit official bests — 1600 m: 4:25.04; 3200 m: 9:51.60; CC 5000: 15:58.58  [oai_citation:4‡MileSplit United States](https://nc.milesplit.com/athletes/16526091-grant-schmid-jr/stats?utm_source=chatgpt.com)  
+            </p>
+          </section>
+
+          <!-- SKILLS -->
+          <section id="skills">
+            <h3>Skills</h3>
+            <p class="lead">What drives me — on the track and in business.</p>
+
+            <div class="skill">
+              <div class="label"><span>Running Discipline</span><span>98%</span></div>
+              <div class="bar"><i style="width:98%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>Leadership</span><span>90%</span></div>
+              <div class="bar"><i style="width:90%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>Training Consistency</span><span>90%</span></div>
+              <div class="bar"><i style="width:90%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>Communication</span><span>85%</span></div>
+              <div class="bar"><i style="width:85%"></i></div>
+            </div>
+          </section>
+
+          <!-- ENTREPRENEURSHIP -->
+          <section id="entrepreneurship" style="margin-top:24px;">
+            <h3>Entrepreneurship</h3>
+            <p class="lead">What I’ve built — beyond track.</p>
+            <ul>
+              <li><strong>Junior Lawn Care</strong> — Over 15 regular customers during middle school for 2 years.</li>
+              <li><strong>Firewood Delivery Business</strong> — Delivered over 10 cords of firewood in a year.</li>
+              <li><strong>Adirondack Chair Business</strong> — Built and sold over 20 handmade chairs in under 4 months.</li>
+              <li><strong>Flipping & Resale</strong> — Bought/sold dirt bikes, mini-bikes, ATVs, go-carts, lawn mowers, log splitters, and other tools.</li>
+            </ul>
+          </section>
+
+        </div>
+      </main>
+
+      <!-- ASIDE: Contact + More Info -->
+      <aside>
+        <div class="card" id="contact">
+          <h3>Contact</h3>
+          <p class="lead">Reach out for running collabs, business, or anything else.</p>
+          <p><strong>Email:</strong> <a href="mailto:gschmidjr@gmail.com" style="color:var(--accent-2)">gschmidjr@gmail.com</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/schmidy13" style="color:var(--accent-2)">@schmidy13</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Fun Facts</h3>
+          <ul style="color:var(--muted);">
+            <li>I run ~50 miles a week.</li>
+            <li>I started running in 5th grade.</li>
+            <li>I juggle business ventures while being a full-time athlete.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const nameEl = document.querySelector('.brand h1');
+      const avatar = document.querySelector('.avatar');
+      if(nameEl && avatar){
+        const name = nameEl.textContent.trim();
+        const initials = name.split(/\s+/).map(s => s[0]).join('').slice(0, 2).toUpperCase();
+        avatar.textContent = initials || 'GS';
+      }
+    })();
+  </script>
+</body>
+</html>
